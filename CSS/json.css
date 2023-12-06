@@ -10,3 +10,8 @@ body {
 h1, ul {
     text-align: center;
 }
+
+li {
+    margin: 10px;
+    list-style: none;
+}
