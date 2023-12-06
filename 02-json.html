@@ -27,6 +27,15 @@
                 url: 'https://laravel.com/'
             }
         ],
-    }"></ul>
+        }">
+        <template x-for="element in données">
+            <li>
+                <span x-text="element.nom">nom</span>
+                <a :href="element.url" x-text="element.projet">
+                    projet
+                </a>
+            </li>
+        </template>
+        </ul>
 </body>
 </html>
