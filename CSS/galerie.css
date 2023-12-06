@@ -29,3 +29,9 @@
         border-radius: 50%;
     }
 
+.overlay>figure {
+        margin: 0;
+        padding: 1rem;
+        border: 2px solid #fff;
+        background-color: black;
+    }
