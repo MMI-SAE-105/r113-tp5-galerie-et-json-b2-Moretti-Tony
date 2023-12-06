@@ -1,47 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
 
-* {
+body {
     font-family: poppins;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
 }
+
+h1, p {
+    text-align: center;
+}
+
+img {
+    border: 2px solid #ccc;
+    margin: 10px;
+}
+
+img:hover {
+    border-color: #333;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
 .overlay {
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0,0,0,0.5);
-        cursor: pointer;
-        display: grid;
-        place-content: center;
-    }
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+}
 
 .overlay::after {
-        content: "->";
-        color: #fff;
-        background-color: black;
-        font-family: sans-serif;
-        text-align: center;
-        line-height: 2rem;
-        display: block;
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        width: 2rem;
-        height: 2rem;
-        border: 2px solid #fff;
-        border-radius: 50%;
-    }
+    content: "->";
+    color: #fff;
+    background-color: black;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 2rem;
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
 
 .overlay>figure {
-        margin: 0;
-        padding: 1rem;
-        border: 2px solid #fff;
-        background-color: black;
-    }
+    margin: 0;
+    padding: 1rem;
+    border: 2px solid #fff;
+    background-color: black;
+}
 
 .overlay>figure>img {
-        max-width: 100%;
-        height: auto;
-    }
+    max-width: 100%;
+    height: auto;
+}
