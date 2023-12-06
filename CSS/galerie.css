@@ -35,3 +35,8 @@
         border: 2px solid #fff;
         background-color: black;
     }
+
+.overlay>figure>img {
+        max-width: 100%;
+        height: auto;
+    }
